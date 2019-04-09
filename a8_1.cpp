@@ -39,7 +39,7 @@ Fraction Fraction::addTo(Fraction num) {
 	}
 	else {
 		temp.denominator = denominator * num.denominator;
-		temp.numerator = numerator * num.denominator + denominator * num.denominator;
+		temp.numerator = numerator * num.denominator + denominator * num.numerator;
 	}
 	return temp;
 }
