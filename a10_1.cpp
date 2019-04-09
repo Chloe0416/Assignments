@@ -1,10 +1,11 @@
 #include <iostream>
-#include "fraction.h"
+#include "a10_fraction.h"
 using namespace std;
 
 
 int main()
 {
+	// Just some simple test cases
 	Fraction f1;
 	cout << f1;
 
