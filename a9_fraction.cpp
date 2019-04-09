@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cassert>
-#include "fraction.h"
+#include "a9_fraction.h"
 using namespace std;
 
 Fraction::Fraction()
