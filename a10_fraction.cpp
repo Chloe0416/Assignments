@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <cassert>
-#include "fraction.h"
+#include "a10_fraction.h"
 
 using namespace std;
 
