@@ -44,7 +44,7 @@ void BasicTest()
 
 
 	cout << "\n----- Now reading Fractions from file\n";
-	ifstream in("Fraction.txt");
+	ifstream in("a11Fraction.txt");
 	assert(in);
 	while (!eof(in)) {
 		Fraction f;
