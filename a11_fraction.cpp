@@ -51,7 +51,7 @@ namespace cs_fraction {
 		}
 		else {
 			temp.denominator = denominator * num.denominator;
-			temp.numerator = numerator * num.denominator - denominator * num.denominator;
+			temp.numerator = numerator * num.denominator - denominator * num.numerator;
 		}
 		return temp;
 
@@ -229,7 +229,7 @@ namespace cs_fraction {
 		}
 		else {
 			temp.denominator = num1.denominator * num2.denominator;
-			temp.numerator = num1.numerator * num2.denominator - num1.denominator * num2.denominator;
+			temp.numerator = num1.numerator * num2.denominator - num1.denominator * num2.numerator;
 		}
 		return temp;
 	}
@@ -265,7 +265,7 @@ namespace cs_fraction {
 		}
 		else {
 			num1.denominator = num1.denominator * num2.denominator;
-			num1.numerator = num1.numerator * num2.denominator - num1.denominator * num2.denominator;
+			num1.numerator = num1.numerator * num2.denominator - num1.denominator * num2.numerator;
 		}
 		return num1;
 	}
@@ -283,17 +283,23 @@ namespace cs_fraction {
 		num1.denominator = num1.denominator * num2.numerator;
 		return num1;
 	}
-
+	
+	// prefix
 	Fraction Fraction::operator ++(int num)
 	{
+		int nu = numerator;
+		int de = denominator;
 		numerator += denominator;
-		return Fraction(numerator, denominator);
+		return Fraction(nu, de);
 	}
 
+	//prefix
 	Fraction Fraction::operator --(int num)
 	{
+		int nu = numerator;
+		int de = denominator;
 		numerator -= denominator;
-		return Fraction(numerator, denominator);
+		return Fraction(nu, de);
 	}
 
 	Fraction Fraction::operator ++()
