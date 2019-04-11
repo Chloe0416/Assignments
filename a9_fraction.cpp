@@ -45,7 +45,7 @@ Fraction Fraction::subtract(const Fraction num) const
 	}
 	else {
 		temp.denominator = denominator * num.denominator;
-		temp.numerator = numerator * num.denominator - denominator * num.denominator;
+		temp.numerator = numerator * num.denominator - denominator * num.numerator;
 	}
 	temp.simplify();
 	return temp;
